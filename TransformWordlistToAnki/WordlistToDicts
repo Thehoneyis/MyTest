@@ -1,0 +1,8 @@
+import os
+import os.path
+fileFrom = open('E:\\froma.txt', 'r', encoding = 'utf-8')
+with open('E:\\testTo.txt','w',encoding = 'utf-8') as fileTo:
+    for line in fileFrom :
+        if(line is not None):
+            fileTo.write('+' + line)
+            fileTo.write('$1\n')
